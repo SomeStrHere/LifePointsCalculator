@@ -175,7 +175,7 @@
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.MaximumSize = new System.Drawing.Size(375, 316);
+            this.MaximumSize = new System.Drawing.Size(750, 632);
             this.MinimumSize = new System.Drawing.Size(375, 316);
             this.Name = "Form1";
             this.Text = "Form1";
