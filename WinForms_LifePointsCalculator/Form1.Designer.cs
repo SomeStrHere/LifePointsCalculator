@@ -38,8 +38,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -77,27 +75,33 @@
             // richTextBox2
             // 
             this.richTextBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox2.Location = new System.Drawing.Point(197, 73);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(139, 49);
             this.richTextBox2.TabIndex = 3;
-            this.richTextBox2.Text = "";
+            this.richTextBox2.Text = "8000";
             // 
             // textBox1
             // 
+            this.textBox1.ForeColor = System.Drawing.Color.Gray;
             this.textBox1.Location = new System.Drawing.Point(17, 135);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(139, 20);
             this.textBox1.TabIndex = 4;
+            this.textBox1.Text = "Enter value here";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox2
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.ForeColor = System.Drawing.Color.Gray;
             this.textBox2.Location = new System.Drawing.Point(197, 135);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(139, 20);
             this.textBox2.TabIndex = 5;
+            this.textBox2.Text = "Enter value here";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button1
             // 
@@ -112,7 +116,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(95, 197);
+            this.button2.Location = new System.Drawing.Point(95, 201);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(61, 27);
             this.button2.TabIndex = 7;
@@ -122,49 +126,28 @@
             // button3
             // 
             this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.Location = new System.Drawing.Point(275, 178);
+            this.button3.Location = new System.Drawing.Point(17, 224);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(61, 27);
             this.button3.TabIndex = 8;
-            this.button3.Text = "button3";
+            this.button3.Text = "/";
             this.button3.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(197, 178);
+            this.button4.Location = new System.Drawing.Point(197, 195);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(61, 27);
+            this.button4.Size = new System.Drawing.Size(139, 38);
             this.button4.TabIndex = 9;
-            this.button4.Text = "button4";
+            this.button4.Text = "Enter";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(17, 230);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(61, 27);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button6.Location = new System.Drawing.Point(275, 211);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(61, 27);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(359, 277);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -178,7 +161,7 @@
             this.MaximumSize = new System.Drawing.Size(750, 632);
             this.MinimumSize = new System.Drawing.Size(375, 316);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Enter";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,8 +179,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
     }
 }
 
