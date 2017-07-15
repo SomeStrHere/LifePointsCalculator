@@ -160,7 +160,7 @@
             this.MaximumSize = new System.Drawing.Size(750, 632);
             this.MinimumSize = new System.Drawing.Size(375, 316);
             this.Name = "Form1";
-            this.Text = "Enter";
+            this.Text = "Life Point Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
