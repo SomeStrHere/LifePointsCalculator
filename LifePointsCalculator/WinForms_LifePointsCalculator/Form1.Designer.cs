@@ -108,7 +108,7 @@
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(17, 178);
+            this.addButton.Location = new System.Drawing.Point(12, 172);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(61, 27);
             this.addButton.TabIndex = 6;
@@ -133,6 +133,7 @@
             this.divideButton.TabIndex = 8;
             this.divideButton.Text = "/";
             this.divideButton.UseVisualStyleBackColor = true;
+            this.divideButton.Click += new System.EventHandler(this.divideButton_Click);
             // 
             // enterButton
             // 
