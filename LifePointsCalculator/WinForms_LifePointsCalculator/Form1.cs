@@ -16,6 +16,12 @@ namespace WinForms_LifePointsCalculator
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
         private void player1Score_TextChanged(object sender, EventArgs e)
         {
             {
@@ -27,7 +33,7 @@ namespace WinForms_LifePointsCalculator
                 catch
                 {
                     // If there is an error, display error message
-                    errorTextBox.Text = "Sorry, there was an error";
+                    //errorTextBox.Text = "Sorry, there was an error";
                 }
             }
         }
