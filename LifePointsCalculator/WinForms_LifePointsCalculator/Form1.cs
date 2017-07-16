@@ -25,6 +25,18 @@ namespace WinForms_LifePointsCalculator
 
         private void button1_Click(object sender, EventArgs e)
         {
+                // if player 1's input field is not set as default and player 2's is set to default
+                // perform the addition operation on player 1's score.
+            if  (player1Input != p1DefaultInputStr) || (player2Input == p2DefaultInputStr) // TODO
+            {
+                int intPlayer1Input = int.Parse(player1Input.Text); //create a int var for the int version of player1Input
+                int intPlayer1Score = int.Parse(player1Score.Text);
+
+                intPlayer1Score = intPlayer1Score + intPlayer1Input; //perform the addition
+                player1Score.Text = intPlayer1Score.ToString(); //assign the converted int back to the text property  of player1Score
+            }
+
+
 
 
         }
@@ -71,7 +83,8 @@ namespace WinForms_LifePointsCalculator
 
         private void player1Input_TextChanged(object sender, EventArgs e)
         {
-           if player1Input == 0 :
+            //if (player1Input.Text == "0")
+            //    player1Input.Text = p1DefaultInputStr;
 
         }
     }
