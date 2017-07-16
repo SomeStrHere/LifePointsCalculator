@@ -36,6 +36,14 @@ namespace WinForms_LifePointsCalculator
                 player1Score.Text = intPlayer1Score.ToString(); //assign the converted int back to the text property  of player1Score
             }
 
+            if (player2Input != p2DefaultInputStr) || (player1Input == p1DefaultInputStr) // TODO
+            {
+                int intPlayer2Input = int.Parse(player2Input.Text); //create a int var for the int version of player1Input
+                int intPlayer2Score = int.Parse(player2Score.Text);
+
+                intPlayer2Score = intPlayer2Score + intPlayer2Input; //perform the addition
+                player2Score.Text = intPlayer2Score.ToString();
+            }
 
 
 
