@@ -9,14 +9,24 @@ using System.Windows.Forms;
 
 namespace WinForms_LifePointsCalculator
 {
-    public partial class Form1 : Form
+    public partial class mainForm : Form
     {
-        public Form1()
+        public mainForm()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void player1Score_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void player2Score_TextChanged(object sender, EventArgs e)
         {
 
         }
