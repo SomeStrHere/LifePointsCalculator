@@ -51,10 +51,6 @@ namespace WinForms_LifePointsCalculator
 
             }
 
-
-
-
-
         }
 
         private void player1Score_TextChanged(object sender, EventArgs e)
@@ -106,7 +102,27 @@ namespace WinForms_LifePointsCalculator
 
         private void subtractButton_Click(object sender, EventArgs e)
         {
+            int intPlayer1Input = int.Parse(player1Input.Text); // create int variables for each player representing score and input value
+            int intPlayer1Score = int.Parse(player1Score.Text);
 
+            int intPlayer2Input = int.Parse(player2Input.Text);
+            int intPlayer2Score = int.Parse(player2Score.Text);
+
+            if (intPlayer1Input != p1DefaultInput)
+            {
+                intPlayer1Score = intPlayer1Score - intPlayer1Input; //perform the subtraction
+                player1Score.Text = intPlayer1Score.ToString(); //assign the converted int back to the text property  of player1Score
+                player1Input.Text = p1DefaultInput.ToString(); //after the subtract operation reset the input text box to 0
+            }
+
+            if (intPlayer2Input != p2DefaultInput)
+            {
+
+                intPlayer2Score = intPlayer2Score - intPlayer2Input; //perform the subtraction
+                player2Score.Text = intPlayer2Score.ToString();
+                player2Input.Text = p2DefaultInput.ToString(); //after the subtraction operation reset the input text box to 0
+
+            }
         }
     }
 }
