@@ -37,7 +37,7 @@
             this.addButton = new System.Windows.Forms.Button();
             this.subtractButton = new System.Windows.Forms.Button();
             this.divideButton = new System.Windows.Forms.Button();
-            this.enterButton = new System.Windows.Forms.Button();
+            this.resetButton = new System.Windows.Forms.Button();
             this.messageTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -142,15 +142,17 @@
             this.divideButton.UseVisualStyleBackColor = true;
             this.divideButton.Click += new System.EventHandler(this.divideButton_Click);
             // 
-            // enterButton
+            // resetButton
             // 
-            this.enterButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.enterButton.Location = new System.Drawing.Point(197, 173);
-            this.enterButton.Name = "enterButton";
-            this.enterButton.Size = new System.Drawing.Size(139, 38);
-            this.enterButton.TabIndex = 9;
-            this.enterButton.Text = "Enter";
-            this.enterButton.UseVisualStyleBackColor = true;
+            this.resetButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.resetButton.ForeColor = System.Drawing.Color.Red;
+            this.resetButton.Location = new System.Drawing.Point(260, 204);
+            this.resetButton.Name = "resetButton";
+            this.resetButton.Size = new System.Drawing.Size(76, 29);
+            this.resetButton.TabIndex = 9;
+            this.resetButton.Text = "Reset";
+            this.resetButton.UseVisualStyleBackColor = true;
+            this.resetButton.Click += new System.EventHandler(this.resetButton_Click);
             // 
             // messageTextBox
             // 
@@ -168,7 +170,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(359, 277);
             this.Controls.Add(this.messageTextBox);
-            this.Controls.Add(this.enterButton);
+            this.Controls.Add(this.resetButton);
             this.Controls.Add(this.divideButton);
             this.Controls.Add(this.subtractButton);
             this.Controls.Add(this.addButton);
@@ -198,7 +200,7 @@
         private System.Windows.Forms.Button addButton;
         private System.Windows.Forms.Button subtractButton;
         private System.Windows.Forms.Button divideButton;
-        private System.Windows.Forms.Button enterButton;
+        private System.Windows.Forms.Button resetButton;
         private System.Windows.Forms.TextBox messageTextBox;
     }
 }

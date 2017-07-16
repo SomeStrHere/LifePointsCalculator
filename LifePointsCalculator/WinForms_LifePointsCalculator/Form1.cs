@@ -144,5 +144,10 @@ namespace WinForms_LifePointsCalculator
 
             }
         }
+
+        private void resetButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
