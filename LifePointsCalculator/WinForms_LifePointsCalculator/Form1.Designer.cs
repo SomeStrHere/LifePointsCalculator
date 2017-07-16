@@ -38,7 +38,7 @@
             this.subtractButton = new System.Windows.Forms.Button();
             this.divideButton = new System.Windows.Forms.Button();
             this.enterButton = new System.Windows.Forms.Button();
-            this.errorTextBox = new System.Windows.Forms.TextBox();
+            this.messageTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // player1Label
@@ -98,6 +98,7 @@
             this.player1Input.TabIndex = 4;
             this.player1Input.Text = "Enter value here";
             this.player1Input.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.player1Input.TextChanged += new System.EventHandler(this.player1Input_TextChanged);
             // 
             // player2Input
             // 
@@ -150,22 +151,22 @@
             this.enterButton.Text = "Enter";
             this.enterButton.UseVisualStyleBackColor = true;
             // 
-            // errorTextBox
+            // messageTextBox
             // 
-            this.errorTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.messageTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.errorTextBox.Location = new System.Drawing.Point(12, 245);
-            this.errorTextBox.Name = "errorTextBox";
-            this.errorTextBox.ReadOnly = true;
-            this.errorTextBox.Size = new System.Drawing.Size(324, 20);
-            this.errorTextBox.TabIndex = 10;
+            this.messageTextBox.Location = new System.Drawing.Point(12, 245);
+            this.messageTextBox.Name = "messageTextBox";
+            this.messageTextBox.ReadOnly = true;
+            this.messageTextBox.Size = new System.Drawing.Size(324, 20);
+            this.messageTextBox.TabIndex = 10;
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(359, 277);
-            this.Controls.Add(this.errorTextBox);
+            this.Controls.Add(this.messageTextBox);
             this.Controls.Add(this.enterButton);
             this.Controls.Add(this.divideButton);
             this.Controls.Add(this.subtractButton);
@@ -197,7 +198,7 @@
         private System.Windows.Forms.Button subtractButton;
         private System.Windows.Forms.Button divideButton;
         private System.Windows.Forms.Button enterButton;
-        private System.Windows.Forms.TextBox errorTextBox;
+        private System.Windows.Forms.TextBox messageTextBox;
     }
 }
 
