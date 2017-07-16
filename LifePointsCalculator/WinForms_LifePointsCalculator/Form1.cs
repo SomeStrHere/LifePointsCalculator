@@ -13,6 +13,7 @@ namespace WinForms_LifePointsCalculator
     {
         int p1DefaultInput; // declare variables here to allow access from click events
         int p2DefaultInput;
+        string defaultStartScore = "8000";
         
         public mainForm()
         {
@@ -147,7 +148,11 @@ namespace WinForms_LifePointsCalculator
 
         private void resetButton_Click(object sender, EventArgs e)
         {
-
+            player1Score.Text = defaultStartScore; // Makes sure that the score field is reset to the default starting score
+            player2Score.Text = defaultStartScore;
+            player1Input.Text = p1DefaultInput.ToString();
+            player2Input.Text = p2DefaultInput.ToString(); // Makes sure that the input field is reset to 0
+            messageTextBox.Text = "New game, have fun";
         }
     }
 }
