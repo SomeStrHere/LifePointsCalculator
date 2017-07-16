@@ -130,6 +130,7 @@
             this.subtractButton.TabIndex = 7;
             this.subtractButton.Text = "-";
             this.subtractButton.UseVisualStyleBackColor = true;
+            this.subtractButton.Click += new System.EventHandler(this.subtractButton_Click);
             // 
             // divideButton
             // 
