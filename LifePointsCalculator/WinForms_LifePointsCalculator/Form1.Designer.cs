@@ -38,6 +38,7 @@
             this.subtractButton = new System.Windows.Forms.Button();
             this.divideButton = new System.Windows.Forms.Button();
             this.enterButton = new System.Windows.Forms.Button();
+            this.errorTextBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // player1Label
@@ -67,7 +68,9 @@
             // 
             this.player1Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player1Score.Location = new System.Drawing.Point(17, 73);
+            this.player1Score.Multiline = false;
             this.player1Score.Name = "player1Score";
+            this.player1Score.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.player1Score.Size = new System.Drawing.Size(139, 49);
             this.player1Score.TabIndex = 2;
             this.player1Score.Text = "8000";
@@ -78,7 +81,9 @@
             this.player2Score.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.player2Score.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.player2Score.Location = new System.Drawing.Point(197, 73);
+            this.player2Score.Multiline = false;
             this.player2Score.Name = "player2Score";
+            this.player2Score.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.player2Score.Size = new System.Drawing.Size(139, 49);
             this.player2Score.TabIndex = 3;
             this.player2Score.Text = "8000";
@@ -108,7 +113,7 @@
             // addButton
             // 
             this.addButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addButton.Location = new System.Drawing.Point(12, 172);
+            this.addButton.Location = new System.Drawing.Point(12, 161);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(61, 27);
             this.addButton.TabIndex = 6;
@@ -118,7 +123,7 @@
             // 
             // subtractButton
             // 
-            this.subtractButton.Location = new System.Drawing.Point(95, 201);
+            this.subtractButton.Location = new System.Drawing.Point(95, 179);
             this.subtractButton.Name = "subtractButton";
             this.subtractButton.Size = new System.Drawing.Size(61, 27);
             this.subtractButton.TabIndex = 7;
@@ -127,7 +132,7 @@
             // 
             // divideButton
             // 
-            this.divideButton.Location = new System.Drawing.Point(17, 224);
+            this.divideButton.Location = new System.Drawing.Point(12, 206);
             this.divideButton.Name = "divideButton";
             this.divideButton.Size = new System.Drawing.Size(61, 27);
             this.divideButton.TabIndex = 8;
@@ -138,18 +143,29 @@
             // enterButton
             // 
             this.enterButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.enterButton.Location = new System.Drawing.Point(197, 195);
+            this.enterButton.Location = new System.Drawing.Point(197, 173);
             this.enterButton.Name = "enterButton";
             this.enterButton.Size = new System.Drawing.Size(139, 38);
             this.enterButton.TabIndex = 9;
             this.enterButton.Text = "Enter";
             this.enterButton.UseVisualStyleBackColor = true;
             // 
+            // errorTextBox
+            // 
+            this.errorTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.errorTextBox.Location = new System.Drawing.Point(12, 245);
+            this.errorTextBox.Name = "errorTextBox";
+            this.errorTextBox.ReadOnly = true;
+            this.errorTextBox.Size = new System.Drawing.Size(324, 20);
+            this.errorTextBox.TabIndex = 10;
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(359, 277);
+            this.Controls.Add(this.errorTextBox);
             this.Controls.Add(this.enterButton);
             this.Controls.Add(this.divideButton);
             this.Controls.Add(this.subtractButton);
@@ -181,6 +197,7 @@
         private System.Windows.Forms.Button subtractButton;
         private System.Windows.Forms.Button divideButton;
         private System.Windows.Forms.Button enterButton;
+        private System.Windows.Forms.TextBox errorTextBox;
     }
 }
 

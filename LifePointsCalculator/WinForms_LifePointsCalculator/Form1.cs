@@ -27,13 +27,14 @@ namespace WinForms_LifePointsCalculator
             {
                 try
                 {
-                    int.Parse(player1Score.Text);          
+                    int.Parse(player1Score.Text);       
+                    //errorTextBox.Text = "This is a test"; //Testing
                 }
 
                 catch
                 {
                     // If there is an error, display error message
-                    //errorTextBox.Text = "Sorry, there was an error";
+                    errorTextBox.Text = "Sorry, there was an error";
                 }
             }
         }
